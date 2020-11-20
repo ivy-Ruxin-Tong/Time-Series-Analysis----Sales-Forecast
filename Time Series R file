@@ -8,7 +8,7 @@ install.packages("TSA")
 library(TSA)
 
 
-# read and understand response (EAD)
+# read data and univariate time series data analysis
 salesdata=read.table("SalesData.csv",sep = ",", header=TRUE)
 salesdata=ts(salesdata) #this makes sure R knows that x is a time series #time series plot of x with points marked as "o"
 sales=salesdata[,3]
